@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Breadcrumbs, Button, Link, List, ListItem, Typography } from '@mui/material';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default function CardExtended({ 
     imageUrl,
@@ -9,18 +10,18 @@ export default function CardExtended({
 }) {
     return (
         <Box className="px-100 mt-30">
-            <Breadcrumbs aria-label="breadcrumb">
-                <Link underline="hover" color="inherit" href="/">
-                    MUI
-                </Link>
+            <Breadcrumbs 
+                separator={<NavigateNextIcon fontSize="small" />}
+                aria-label="breadcrumb"
+            >
                 <Link
                     underline="hover"
                     color="inherit"
-                    href="/material-ui/getting-started/installation/"
+                    href="#"
                 >
-                    Core
+                    Defender Series Shed
                 </Link>
-                <Typography className="text-red">Breadcrumbs</Typography>
+                <Typography className="text-red">{ title }</Typography>
             </Breadcrumbs>
         
             <Box className='flex justify-center items-center gap-50 rounded-4 shadow-card border-card p-20'>
