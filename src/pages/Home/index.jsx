@@ -9,9 +9,9 @@ export default function Home() {
     const openMenuHandler = () => setWidgetVisible(true);
     const closeMenuHandler = () => setWidgetVisible(false);
 
-    // useEffect(() => {
-    //     setTimeout(openMenuHandler, 4000);
-    // }, []);
+    useEffect(() => {
+        setTimeout(openMenuHandler, 4000);
+    }, []);
     return (
         <>
             <Header />

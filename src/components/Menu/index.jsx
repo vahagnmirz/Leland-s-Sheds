@@ -1,6 +1,8 @@
 import React from 'react';
 import { Close } from '@mui/icons-material';
 import { Box, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { MenuList } from '../../App';
 
 export default function Menu({ closeHandler }) {
     return (
@@ -45,15 +47,26 @@ export default function Menu({ closeHandler }) {
                     <Typography variant='body1' component='div' className='text-left !font-bold text-black text-lg !mb-10 !mt-5 cursor-pointer'>
                         Products
                     </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Defender Series Sheds
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Value Series Sheds
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Backyard Series Sheds
-                    </Typography>
+                    <Link onClick={closeHandler} to={MenuList.defenderShedsUrl}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Defender Series Sheds
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.diamondShedsUrl}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Diamond Series Sheds
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.valueShedsUrl}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Value Series Sheds
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.backyardShedsUrl}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Backyard Series Sheds
+                        </Typography>
+                    </Link>
                     <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
                         Shed Options & Upgrades
                     </Typography>
@@ -72,21 +85,31 @@ export default function Menu({ closeHandler }) {
                     <Typography variant='body1' component='div' className='text-left !font-bold text-black text-lg !mb-10 !mt-5 cursor-pointer'>
                         Informative
                     </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        FAQs
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Rent To Own
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Warranty
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Delivery
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Privacy Policy
-                    </Typography>
+                    <Link onClick={closeHandler} to={MenuList.faq}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            FAQs
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.rent}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Rent To Own
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.warranty}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Warranty
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.delivery}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Delivery
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.privacy}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Privacy Policy
+                        </Typography>
+                    </Link>
                 </Box>
             </Box>
             <Box className="flex justify-start gap-20 mb-10">

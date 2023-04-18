@@ -23,7 +23,7 @@ export default function CardExtended({
                 </Link>
                 <Typography className="text-red">{ title }</Typography>
             </Breadcrumbs>
-        
+
             <Box className='flex justify-center items-center gap-50 rounded-4 shadow-card border-card p-20'>
                 <Box>
                     <img 
@@ -39,10 +39,10 @@ export default function CardExtended({
                     <Typography variant='body1' component='div' className='!font-medium text-black !text-2xl text-center'>
                         { title }
                     </Typography>
-                    <Typography variant='body1' component='div' className='!font-normal text-black !text-sm text-center px-40 !my-20'>
+                    <Typography variant='body1' component='div' className='!font-normal text-black !text-sm text-center px-10 !my-20'>
                         Item available to purchase online through a sales person or contact your local dealer for any in Stock items
                     </Typography>
-                    <Typography variant='body1' component='div' className='!font-normal text-description !text-sm text-center px-40'>
+                    <Typography variant='body1' component='div' className='!font-normal text-description !text-sm px-20'>
                         Our newest design features a modern contemporary style and feel that is perfect for a home office or mother-in-law suite. The Chalet shed provides a sleek and sophisticated space no matter what your use may be. The possibilities are endless with this ageless design. Product is shown with an optional upgrade of a dormer light.
                     </Typography>
 

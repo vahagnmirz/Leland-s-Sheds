@@ -1,38 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, List, ListItem, Typography } from "@mui/material";
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
-
-const MenuList = {
-    defenderSheds: 'Defender Series sheds',
-    diamondSheds: 'Diamond Series sheds',
-    valueSheds: 'Value Series sheds',
-    backyardSheds: 'Backyard Series sheds',
-}
+import { Link, useLocation } from "react-router-dom";
+import { MenuList } from "../../App";
 
 export default function SidebarList() {
-    const [activeList, setActiveList] = useState(MenuList.valueSheds);
-
-    const activeSectionChangeHandler = (listName) => () => setActiveList(listName);
+    const { pathname } = useLocation();
 
     return (
         <>
             <Box>
                 {
-                    <Typography 
-                        variant='body1' 
-                        component='div' 
-                        onClick={(activeSectionChangeHandler(MenuList.defenderSheds))}
-                        className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
-                            ${
-                                (activeList===MenuList.defenderSheds) ?
-                                'bg-red rounded-34 text-white' :
-                                ''
-                            }
-                        `}
-                    >
-                        { MenuList.defenderSheds }
-                        <TrendingFlatIcon color={(activeList===MenuList.defenderSheds) ? "inherit" : "error"} />
-                    </Typography> 
+                    <Link to={MenuList.defenderShedsUrl}>
+                        <Typography 
+                            variant='body1' 
+                            component='div' 
+                            className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
+                                ${
+                                    (pathname===MenuList.defenderShedsUrl) ?
+                                    'bg-red rounded-34 text-white' :
+                                    ''
+                                }
+                            `}
+                        >
+                            { MenuList.defenderSheds }
+                            <TrendingFlatIcon color={(pathname===MenuList.defenderShedsUrl) ? "inherit" : "error"} />
+                        </Typography> 
+                    </Link>
                 }
                 <List
                     sx={{
@@ -72,24 +66,25 @@ export default function SidebarList() {
                     </ListItem>
                 </List>
             </Box>
-            
+
             <Box>
                 {
-                    <Typography 
-                        variant='body1' 
-                        component='div' 
-                        onClick={(activeSectionChangeHandler(MenuList.diamondSheds))}
-                        className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
-                            ${
-                                (activeList===MenuList.diamondSheds) ?
-                                'bg-red rounded-34 text-white' :
-                                ''
-                            }
-                        `}
-                    >
-                        { MenuList.diamondSheds }
-                        <TrendingFlatIcon color={(activeList===MenuList.diamondSheds) ? "inherit" : "error"} />
-                    </Typography> 
+                    <Link to={MenuList.diamondShedsUrl}>
+                        <Typography 
+                            variant='body1' 
+                            component='div' 
+                            className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
+                                ${
+                                    (pathname===MenuList.diamondShedsUrl) ?
+                                    'bg-red rounded-34 text-white' :
+                                    ''
+                                }
+                            `}
+                        >
+                            { MenuList.diamondSheds }
+                            <TrendingFlatIcon color={(pathname===MenuList.diamondShedsUrl) ? "inherit" : "error"} />
+                        </Typography> 
+                    </Link>
                 }
                 <List
                     sx={{
@@ -129,24 +124,25 @@ export default function SidebarList() {
                     </ListItem>
                 </List>
             </Box>
-            
+
             <Box>
                 {
-                    <Typography 
-                        variant='body1' 
-                        component='div' 
-                        onClick={(activeSectionChangeHandler(MenuList.valueSheds))}
-                        className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
-                            ${
-                                (activeList===MenuList.valueSheds) ?
-                                'bg-red rounded-34 text-white' :
-                                ''
-                            }
-                        `}
-                    >
-                        { MenuList.valueSheds }
-                        <TrendingFlatIcon color={(activeList===MenuList.valueSheds) ? "inherit" : "error"} />
-                    </Typography> 
+                    <Link to={MenuList.valueShedsUrl}>
+                        <Typography 
+                            variant='body1' 
+                            component='div' 
+                            className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
+                                ${
+                                    (pathname===MenuList.valueShedsUrl) ?
+                                    'bg-red rounded-34 text-white' :
+                                    ''
+                                }
+                            `}
+                        >
+                            { MenuList.valueSheds }
+                            <TrendingFlatIcon color={(pathname===MenuList.valueShedsUrl) ? "inherit" : "error"} />
+                        </Typography>
+                    </Link> 
                 }
                 <List
                     sx={{
@@ -181,24 +177,25 @@ export default function SidebarList() {
                     </ListItem>
                 </List>
             </Box>
-            
+
             <Box>
                 {
-                    <Typography 
-                        variant='body1' 
-                        component='div' 
-                        onClick={(activeSectionChangeHandler(MenuList.backyardSheds))}
-                        className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
-                            ${
-                                (activeList===MenuList.backyardSheds) ?
-                                'bg-red rounded-34 text-white' :
-                                ''
-                            }
-                        `}
-                    >
-                        { MenuList.backyardSheds }
-                        <TrendingFlatIcon color={(activeList===MenuList.backyardSheds) ? "inherit" : "error"} />
-                    </Typography> 
+                    <Link to={MenuList.backyardShedsUrl}>
+                        <Typography 
+                            variant='body1' 
+                            component='div' 
+                            className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
+                                ${
+                                    (pathname===MenuList.backyardShedsUrl) ?
+                                    'bg-red rounded-34 text-white' :
+                                    ''
+                                }
+                            `}
+                        >
+                            { MenuList.backyardSheds }
+                            <TrendingFlatIcon color={(pathname===MenuList.backyardShedsUrl) ? "inherit" : "error"} />
+                        </Typography> 
+                    </Link>
                 }
                 <List
                     sx={{

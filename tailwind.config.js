@@ -26,10 +26,13 @@ export default {
                 '20': '20px',
                 '25': '25px',
                 '30': '30px',
+                '32': '32px',
                 '35': '35px',
                 '40': '40px',
                 '50': '50px',
+                '54': '54px',
                 '60': '60px',
+                '62': '62px',
                 '70': '70px',
                 '80': '80px',
                 '90': '90px',
@@ -39,14 +42,14 @@ export default {
                 'half': '50%',
                 'half_': '-50%',
             },
-            height: {
-                'fh': '100vh',
-            },
             screens: {
                 'mobile': '320px',
                 'mobile_laptop': '420px',
                 'laptop': '668px',
                 'desktop': '10240px',
+            },
+            height: {
+                'fh': '100vh',
             },
             width: {
                 'menu': '300px',
@@ -54,9 +57,11 @@ export default {
                 'sidebar': '350px',
                 'section': 'calc(100% - 400px)',
                 'fw': '100vw',
+                'contentLeft': '745px'
             },
             minHeight: {
                 'fh': '100vh',
+                'layout': 'calc(100vh - 191px)',
             },
             minWidth: {
                 'fw': '100vw',
@@ -66,7 +71,9 @@ export default {
                 '400': '400px',
                 '450': '450px',
                 '500': '500px',
+                '600': '600px',
                 'half': '50%',
+                '45': '45%',
                 '40': '40%',
                 '30': '30%',
             },
@@ -88,8 +95,12 @@ export default {
             card: '4px 4px 4px rgba(0, 0, 0, 0.25);',
             reviewCard: '0px 4px 4px rgba(0, 0, 0, 0.25);',
         },
+        dropShadow: {
+            rentImg: 'filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));',
+        },
         borderWidth: {
-            '1': '1px'
+            '1': '1px',
+            '2': '2px',
         },
         borderRadius: {
             '4': '4px',

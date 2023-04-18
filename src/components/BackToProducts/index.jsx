@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 
 export default function BackToProducts() {
     return (
-        <Box className='flex justify-between px-100 gap-40 mb-30'>
+        <Box className='flex justify-between px-100 gap-40 mb-60'>
             <Box>
                 <Typography variant='body1' component='p' className='!text-base text-black !font-medium !mb-10'>
                     Shed line products are not designed and built for residential purposes.

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function Card({ 
+    id,
     imageUrl,
     title,
     description,
@@ -32,21 +34,23 @@ export default function Card({
             </Typography>
 
             <Box className='mt-10 flex justify-center gap-20 items-center'>
-                <Button
-                    className='!bg-white flex justify-center gap-20 items-center'
-                    sx={{
-                        borderRadius: '8px',
-                        padding: '8px 35px',
-                        color: '#E72125',
-                        border: '2px solid #E72125',
-                        textTransform: 'initial',
-                        fontFamily: 'inherit',
-                        fontWeight: 600,
-                        fontSize: 16,
-                    }}
-                >
-                    Learn More
-                </Button>
+                <Link to={`${id}`}>
+                    <Button
+                        className='!bg-white flex justify-center gap-20 items-center'
+                        sx={{
+                            borderRadius: '8px',
+                            padding: '8px 35px',
+                            color: '#E72125',
+                            border: '2px solid #E72125',
+                            textTransform: 'initial',
+                            fontFamily: 'inherit',
+                            fontWeight: 600,
+                            fontSize: 16,
+                        }}
+                    >
+                        Learn More
+                    </Button>
+                </Link>
                 <Button
                     className='!bg-red flex justify-center gap-20 items-center'
                     sx={{

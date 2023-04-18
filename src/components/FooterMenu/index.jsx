@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 export default function FooterMenu() {
     return (
-        <Box className="flex justify-around gap-20 ">
+        <Box className="flex justify-around gap-20 mb-10">
             <Box>
                 <img 
                     src="/assets/Images/footer-menu-logo.png"
@@ -12,7 +12,7 @@ export default function FooterMenu() {
                     height={220}
                 />
             </Box>
-            
+
             <Box className="gap-20 mb-15">
                 <Typography variant='body1' component='div' className='text-left !font-bold text-black !text-lg !mb-20 !mt-5 cursor-pointer'>
                     Get Started
