@@ -6,7 +6,7 @@ export default function FAQ() {
     return (
         <>
             <Box className="flex justify-between px-100 py-54 gap-60">
-                <Box>
+                <Box className="max-w-45">
                     <HeadingAndButton heading="FAQs about Leland's sheds" onlyHeading />
                     <Box className="!mt-35 !mb-30 rounded-4 shadow-card p-20">
                         <Typography className="capitalize !font-medium !text-xl text-red">
@@ -104,7 +104,7 @@ export default function FAQ() {
                     </Box>
                 </Box>
 
-                <Box>
+                <Box className="max-w-45">
                     <HeadingAndButton onlyButton />
                     <Box className="!my-30 rounded-4 shadow-card p-20">
                         <Typography className="capitalize !font-medium !text-xl text-red">

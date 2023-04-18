@@ -17,9 +17,9 @@ export default function Card({
                 alt='Logo'
                 width={350}
                 height={250}
-                className='block mx-auto'
+                className='block mx-auto !w-card-img !h-card-img'
             />
-            <Typography variant='body1' component='div' className='!font-semibold text-black !text-lg text-center'>
+            <Typography variant='body1' component='div' className='!font-semibold text-black !mt-10 !text-lg text-center'>
                 { title }
             </Typography>
             {

@@ -50,8 +50,10 @@ export default {
             },
             height: {
                 'fh': '100vh',
+                'card-img': '250px',
             },
             width: {
+                'card-img': '350px',
                 'menu': '300px',
                 'can-we-help': '600px',
                 'sidebar': '350px',
