@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography } from "@mui/material";
+import { Link } from 'react-router-dom';
+import { MenuList } from '../../App';
 
 export default function HeadingAndButton({ onlyButton, onlyHeading, heading, buttonText = "Back To All Products" }) {
     if (onlyHeading) return (
@@ -12,9 +14,11 @@ export default function HeadingAndButton({ onlyButton, onlyHeading, heading, but
 
     if (onlyButton) return (
         <Box className="flex justify-end">
-            <Button className='!bg-red !text-white !px-40 !py-15 !text-base !normal-case !rounded-8'>
-                { buttonText }
-            </Button>
+            <Link to={MenuList.defenderShedsUrl}>
+                <Button className='!bg-red !text-white !px-40 !py-15 !text-base !normal-case !rounded-8'>
+                    { buttonText }
+                </Button>
+            </Link>
         </Box>
     )
 
@@ -24,9 +28,11 @@ export default function HeadingAndButton({ onlyButton, onlyHeading, heading, but
                 { heading }
             </Typography>
             <Box className="flex justify-end">
-                <Button className='!bg-red !text-white !px-40 !py-15 !text-base !normal-case !rounded-8'>
-                    { buttonText }
-                </Button>
+                <Link to={MenuList.defenderShedsUrl}>
+                    <Button className='!bg-red !text-white !px-40 !py-15 !text-base !normal-case !rounded-8'>
+                        { buttonText }
+                    </Button>
+                </Link>
             </Box>
         </Box>
     )

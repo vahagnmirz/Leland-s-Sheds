@@ -17,14 +17,14 @@ export default function SidebarList() {
                             component='div' 
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
-                                    (pathname===MenuList.defenderShedsUrl) ?
+                                    (pathname.includes(MenuList.defenderShedsUrl)) ?
                                     'bg-red rounded-34 text-white' :
                                     ''
                                 }
                             `}
                         >
                             { MenuList.defenderSheds }
-                            <TrendingFlatIcon color={(pathname===MenuList.defenderShedsUrl) ? "inherit" : "error"} />
+                            <TrendingFlatIcon color={(pathname.includes(MenuList.defenderShedsUrl)) ? "inherit" : "error"} />
                         </Typography> 
                     </Link>
                 }
@@ -75,14 +75,14 @@ export default function SidebarList() {
                             component='div' 
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
-                                    (pathname===MenuList.diamondShedsUrl) ?
+                                    (pathname.includes(MenuList.diamondShedsUrl)) ?
                                     'bg-red rounded-34 text-white' :
                                     ''
                                 }
                             `}
                         >
                             { MenuList.diamondSheds }
-                            <TrendingFlatIcon color={(pathname===MenuList.diamondShedsUrl) ? "inherit" : "error"} />
+                            <TrendingFlatIcon color={(pathname.includes(MenuList.diamondShedsUrl)) ? "inherit" : "error"} />
                         </Typography> 
                     </Link>
                 }
@@ -133,14 +133,14 @@ export default function SidebarList() {
                             component='div' 
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
-                                    (pathname===MenuList.valueShedsUrl) ?
+                                    (pathname.includes(MenuList.valueShedsUrl)) ?
                                     'bg-red rounded-34 text-white' :
                                     ''
                                 }
                             `}
                         >
                             { MenuList.valueSheds }
-                            <TrendingFlatIcon color={(pathname===MenuList.valueShedsUrl) ? "inherit" : "error"} />
+                            <TrendingFlatIcon color={(pathname.includes(MenuList.valueShedsUrl)) ? "inherit" : "error"} />
                         </Typography>
                     </Link> 
                 }
@@ -186,14 +186,14 @@ export default function SidebarList() {
                             component='div' 
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
-                                    (pathname===MenuList.backyardShedsUrl) ?
+                                    (pathname.includes(MenuList.backyardShedsUrl)) ?
                                     'bg-red rounded-34 text-white' :
                                     ''
                                 }
                             `}
                         >
                             { MenuList.backyardSheds }
-                            <TrendingFlatIcon color={(pathname===MenuList.backyardShedsUrl) ? "inherit" : "error"} />
+                            <TrendingFlatIcon color={(pathname.includes(MenuList.backyardShedsUrl)) ? "inherit" : "error"} />
                         </Typography> 
                     </Link>
                 }

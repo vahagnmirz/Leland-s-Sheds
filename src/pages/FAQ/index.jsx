@@ -173,12 +173,3 @@ export default function FAQ() {
         </>
     )
 }
-
-/*
-
-
-
-
-
-
-*/

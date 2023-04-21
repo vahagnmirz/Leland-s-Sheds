@@ -114,8 +114,8 @@ export default function LalandShedsDeliveryStatic() {
                 <Box>
                     <HeadingAndButton onlyButton />
                     <Box className="bg-tooltip p-62 mt-30">
-                        <Box className="text-center !font-medium !text-[12px]">Insert YouTube video</Box>
-                        <Typography className="text-center !mt-15 !font-medium !text-[12px]">
+                        <Box className="text-center !font-medium !text-xs">Insert YouTube video</Box>
+                        <Typography className="text-center !mt-15 !font-medium !text-xs">
                             {`<iframe width="425" height="239" src="https://www.youtube.com/embed/ojWoCnY_GzE" 
                                 title="Shed Delivery of a Basic Shed with the Mule - Lelands Barns and Sheds" frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>

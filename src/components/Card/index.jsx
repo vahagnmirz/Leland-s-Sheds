@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { MenuList } from '../../App';
 
 export default function Card({ 
     id,
@@ -8,7 +9,8 @@ export default function Card({
     title,
     description,
     price,
-    sectionBars
+    sectionBars,
+    isSimilar
 }) {
     return (
         <Box className='rounded-4 max-w-450 shadow-card border-1 border-card p-20'>
@@ -34,7 +36,7 @@ export default function Card({
             </Typography>
 
             <Box className='mt-10 flex justify-center gap-20 items-center'>
-                <Link to={`${id}`}>
+                <Link to={isSimilar ? `` : `${id}`}>
                     <Button
                         className='!bg-white flex justify-center gap-20 items-center'
                         sx={{
@@ -51,21 +53,23 @@ export default function Card({
                         Learn More
                     </Button>
                 </Link>
-                <Button
-                    className='!bg-red flex justify-center gap-20 items-center'
-                    sx={{
-                        borderRadius: '8px',
-                        padding: '8px 35px',
-                        color: 'white',
-                        border: '2px solid #E72125',
-                        textTransform: 'initial',
-                        fontFamily: 'inherit',
-                        fontWeight: 600,
-                        fontSize: 16,
-                    }}
-                >
-                    Design Onine
-                </Button>
+                <Link to={MenuList.shedDesigner}>
+                    <Button
+                        className='!bg-red flex justify-center gap-20 items-center'
+                        sx={{
+                            borderRadius: '8px',
+                            padding: '8px 35px',
+                            color: 'white',
+                            border: '2px solid #E72125',
+                            textTransform: 'initial',
+                            fontFamily: 'inherit',
+                            fontWeight: 600,
+                            fontSize: 16,
+                        }}
+                    >
+                        Design Onine
+                    </Button>
+                </Link>
             </Box>
             {
                 sectionBars.length>0 ?

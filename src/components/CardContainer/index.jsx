@@ -6,6 +6,7 @@ export default function CardContainer({
     heading, 
     isRedHeading = false, 
     isPriceVisible = false, 
+    isSimilar = false,
     isSlim = false,
     items = [], 
     sectionBars = []
@@ -32,6 +33,7 @@ export default function CardContainer({
                             price={isPriceVisible && price}
                             description={description}
                             sectionBars={sectionBars}
+                            isSimilar={isSimilar}
                         />
                     ))
                 }

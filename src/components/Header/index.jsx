@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <>
-            <Box className="flex justify-between items-center px-50">
+            <Box className="flex justify-between items-center px-50 shadow-header">
                 <Link to={MenuList.defenderShedsUrl}>
                     <Box>
                         <img 

@@ -6,9 +6,9 @@ import { MenuList } from '../../App';
 
 export default function Menu({ closeHandler }) {
     return (
-        <Box className="bg-white shadow-menu rounded-4 w-menu absolute right-30 px-30 z-10">
+        <Box className="bg-white shadow-menu rounded-4 w-menu absolute right-30 px-30 z-2">
             <Box className="text-right">
-                <Close className='text-menuClose mr-_10 !text-4xl cursor-pointer' onClick={closeHandler} />                
+                <Close onClick={closeHandler} className='text-menuClose mr-_10 !text-4xl cursor-pointer' />                
             </Box>
             <Box className="flex justify-start gap-20 mb-15">
                 <Box>
@@ -23,15 +23,21 @@ export default function Menu({ closeHandler }) {
                     <Typography variant='body1' component='div' className='text-left !font-bold text-black text-lg !mb-10 !mt-5 cursor-pointer'>
                         Get Started
                     </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Home
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        About Us
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Shed Gallery
-                    </Typography>
+                    <Link onClick={closeHandler} to={MenuList.defenderShedsUrl}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Home
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.about}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            About Us
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.gallery}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Shed Gallery
+                        </Typography>
+                    </Link>
                 </Box>
             </Box>
             <Box className="flex justify-start gap-20 mb-15">
@@ -67,9 +73,21 @@ export default function Menu({ closeHandler }) {
                             Backyard Series Sheds
                         </Typography>
                     </Link>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Shed Options & Upgrades
-                    </Typography>
+                    <Link onClick={closeHandler} to={MenuList.shedOptions}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Shed Options & Upgrades
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.shedDesigner}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Shed Designer
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.shedDesigner3d}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Shed Designer 3D
+                        </Typography>
+                    </Link>
                 </Box>
             </Box>
             <Box className="flex justify-start gap-20 mb-15">
@@ -125,12 +143,16 @@ export default function Menu({ closeHandler }) {
                     <Typography variant='body1' component='div' className='text-left !font-bold text-black text-lg !mb-10 !mt-5 cursor-pointer'>
                         Contact
                     </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Contact Us
-                    </Typography>
-                    <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
-                        Service Request
-                    </Typography>
+                    <Link onClick={closeHandler} to={MenuList.contact}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Contact Us
+                        </Typography>
+                    </Link>
+                    <Link onClick={closeHandler} to={MenuList.serviceRequest}>
+                        <Typography variant='body1' component='div' className='text-left font-normal text-black text-base !mb-10 cursor-pointer'>
+                            Service Request
+                        </Typography>
+                    </Link>
                 </Box>
             </Box>
             <Button 

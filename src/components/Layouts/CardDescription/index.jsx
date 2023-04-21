@@ -5,25 +5,32 @@ import DesignWigdet from "../../DesignWidget";
 import Reviews from "../../Reviews";
 import SectionBars from "../../SectionBars";
 import BackToProducts from "../../BackToProducts";
-import { BackyardShedItems, DefenderShedItems, ReviewItems, SectionBarItems } from "../../../App";
+import { BackyardShedItems, ReviewItems, SectionBarItems } from "../../../App";
 import { MenuList } from "../../../App";
+import { useParams } from "react-router-dom";
 
-export default function CardDescription({  }) {
+export default function CardDescription({ items, heading, headingUrl }) {
+    const { _id } = useParams();
+    const elem = items.find(each => each.id==_id);
+
     return (
         <>
             <CardExtended
-                imageUrl={DefenderShedItems[0].imageUrl}
-                title={DefenderShedItems[0].title}
-                subImages={DefenderShedItems[0].subImages}
+                breadcrumbHeading={heading}
+                breadcrumbHeadingUrl={headingUrl}
+                imageUrl={elem?.imageUrl}
+                title={elem?.title}
+                subImages={elem?.subImages}
             />
             <DesignWigdet />
             <Reviews items={ReviewItems} />
             <SectionBars items={SectionBarItems} />
             <CardContainerSimilars 
                 isRedHeading
+                isSimilar
                 heading={MenuList.defenderSheds}
                 items={BackyardShedItems} 
-                sectionBars={SectionBarItems} 
+                sectionBars={SectionBarItems}
             />
             <BackToProducts />
         </>

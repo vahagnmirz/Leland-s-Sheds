@@ -1,9 +1,8 @@
 import React from 'react';
-import Home from './pages/Home';
+import Main from './pages/Main';
 import { BrowserRouter } from 'react-router-dom';
 
 export const MenuList = {
-    gallery: '/gallery',
     defenderSheds: 'Defender Series sheds',
     defenderShedsUrl: '/defender',
     diamondSheds: 'Diamond Series sheds',
@@ -12,6 +11,13 @@ export const MenuList = {
     valueShedsUrl: '/value',
     backyardSheds: 'Backyard Series sheds',
     backyardShedsUrl: '/backyard',
+    contact: '/contact',
+    about: '/about',
+    gallery: '/gallery',
+    serviceRequest: '/service-request',
+    shedOptions: '/shed-options',
+    shedDesigner: '/shed-designer',
+    shedDesigner3d: '/shed-designer-3d',
     faq: '/faq',
     rent: '/rent',
     warranty: '/warranty',
@@ -22,119 +28,119 @@ export const MenuList = {
 export const DefenderShedItems = [
     {
         id: 1,
-        imageUrl: 'assets/Images/Chalet Shed.jpg',
+        imageUrl: '/assets/Images/Chalet Shed.jpg',
         title: 'Chalet Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 2,
-        imageUrl: 'assets/Images/Cabinette Shed.jpg',
+        imageUrl: '/assets/Images/Cabinette Shed.jpg',
         title: 'Cabinette Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 3,
-        imageUrl: 'assets/Images/Garden Shed.jpg',
+        imageUrl: '/assets/Images/Garden Shed.jpg',
         title: 'Garden Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 4,
-        imageUrl: 'assets/Images/Cottage Shed.jpg',
+        imageUrl: '/assets/Images/Cottage Shed.jpg',
         title: 'Cottage Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 5,
-        imageUrl: 'assets/Images/Lofted Barn Shed.jpg',
+        imageUrl: '/assets/Images/Lofted Barn Shed.jpg',
         title: 'Lofted Barn Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 6,
-        imageUrl: 'assets/Images/Garage Shed.jpg',
+        imageUrl: '/assets/Images/Garage Shed.jpg',
         title: 'Garage Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 7,
-        imageUrl: 'assets/Images/Utility Shed.jpg',
+        imageUrl: '/assets/Images/Utility Shed.jpg',
         title: 'Utility Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 8,
-        imageUrl: 'assets/Images/Studio Shed.jpg',
+        imageUrl: '/assets/Images/Studio Shed.jpg',
         title: 'Studio Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 9,
-        imageUrl: 'assets/Images/Lofted Barn Shed Side Entry.jpg',
+        imageUrl: '/assets/Images/Lofted Barn Shed Side Entry.jpg',
         title: 'Lofted Barn Shed Side Entry',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
 ]
@@ -142,28 +148,28 @@ export const DefenderShedItems = [
 export const DiamondShedItems = [
     {
         id: 1,
-        imageUrl: 'assets/Images/Diamond Chalet Shed.jpg',
+        imageUrl: '/assets/Images/Diamond Chalet Shed.jpg',
         title: 'Diamond Chalet Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 2,
-        imageUrl: 'assets/Images/Cabinette Shed.jpg',
+        imageUrl: '/assets/Images/Cabinette Shed.jpg',
         title: 'Diamond Cabinette Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
 ]
@@ -171,28 +177,28 @@ export const DiamondShedItems = [
 export const ValueShedItems = [
     {
         id: 1,
-        imageUrl: 'assets/Images/Basic Shed.jpg',
+        imageUrl: '/assets/Images/Basic Shed.jpg',
         title: 'Basic Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 2,
-        imageUrl: 'assets/Images/Metal Shed.jpg',
+        imageUrl: '/assets/Images/Metal Shed.jpg',
         title: 'Metal Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
 ]
@@ -200,28 +206,28 @@ export const ValueShedItems = [
 export const BackyardShedItems = [
     {
         id: 1,
-        imageUrl: 'assets/Images/Hideout Playhouse.jpg',
+        imageUrl: '/assets/Images/Hideout Playhouse.jpg',
         title: 'Hideout Playhouse',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
     {
         id: 2,
-        imageUrl: 'assets/Images/Victorian Playhouse.jpg',
+        imageUrl: '/assets/Images/Victorian Playhouse.jpg',
         title: 'Victorian Playhouse',
         description: 'Our newest design features a modern contemporary style and feel.',
         price: '6,841',
         subImages: [
-            { imageUrl: 'assets/Images/Chalet Shed 1.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 2.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 3.jpg' },
-            { imageUrl: 'assets/Images/Chalet Shed 4.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 3.jpg' },
+            { imageUrl: '/assets/Images/Chalet Shed 4.jpg' },
         ]
     },
 ]
@@ -242,7 +248,7 @@ function App() {
     return (
         <React.StrictMode>
             <BrowserRouter>
-                <Home />
+                <Main />
             </BrowserRouter>
         </React.StrictMode>
     )

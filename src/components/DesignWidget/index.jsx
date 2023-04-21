@@ -1,12 +1,14 @@
 import React from 'react';
 import { Box, Button, Typography } from "@mui/material";
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
+import { MenuList } from '../../App';
+import { Link } from 'react-router-dom';
 
 export default function DesignWigdet() {
     return (
         <Box
             sx={{
-                backgroundImage: 'url(assets/Images/design-online-widget.png)',
+                backgroundImage: 'url("/assets/Images/design-online-widget.png")',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: '100% 100%',
                 padding: '50px',
@@ -25,7 +27,7 @@ export default function DesignWigdet() {
                     check out our 3D shed configurator for more options.
                 </Typography>
             </Box>
-            <Box>
+            <Link to={MenuList.shedDesigner}>
                 <Button
                     className='!bg-white flex justify-center gap-20 items-center'
                     endIcon={<TrendingFlatIcon color="inherit" className='!text-3xl' />}
@@ -42,7 +44,7 @@ export default function DesignWigdet() {
                 >
                     Design Online
                 </Button>
-            </Box>
+            </Link>
         </Box>
     )
 }

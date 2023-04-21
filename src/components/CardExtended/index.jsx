@@ -1,9 +1,12 @@
 import React from 'react';
-import { Box, Breadcrumbs, Button, Link, List, ListItem, Typography } from '@mui/material';
+import { Box, Breadcrumbs, Button, List, ListItem, Typography } from '@mui/material';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { Link } from 'react-router-dom';
 
 export default function CardExtended({ 
+    breadcrumbHeading,
+    breadcrumbHeadingUrl,
     imageUrl,
     title,
     subImages,
@@ -15,11 +18,11 @@ export default function CardExtended({
                 aria-label="breadcrumb"
             >
                 <Link
+                    to={breadcrumbHeadingUrl}
                     underline="hover"
                     color="inherit"
-                    href="#"
                 >
-                    Defender Series Shed
+                    { breadcrumbHeading }
                 </Link>
                 <Typography className="text-red">{ title }</Typography>
             </Breadcrumbs>
@@ -196,7 +199,7 @@ export default function CardExtended({
                     </Box>
                     <Box className='flex justify-between mt-10 gap-10'>
                         {
-                            subImages.slice(1).map(({ imageUrl }, idx) => (
+                            subImages?.slice(1).map(({ imageUrl }, idx) => (
                                 <img 
                                     key={idx}
                                     src={imageUrl}
