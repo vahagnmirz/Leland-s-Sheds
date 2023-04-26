@@ -5,7 +5,7 @@ import DesignWigdet from "../../DesignWidget";
 import Reviews from "../../Reviews";
 import SectionBars from "../../SectionBars";
 import BackToProducts from "../../BackToProducts";
-import { BackyardShedItems, ReviewItems, SectionBarItems } from "../../../App";
+import { BackyardShedItems, ReviewItems } from "../../../App";
 import { MenuList } from "../../../App";
 import { useParams } from "react-router-dom";
 
@@ -24,13 +24,13 @@ export default function CardDescription({ items, heading, headingUrl }) {
             />
             <DesignWigdet />
             <Reviews items={ReviewItems} />
-            <SectionBars items={SectionBarItems} />
+            <SectionBars items={elem.categories} />
             <CardContainerSimilars 
                 isRedHeading
                 isSimilar
                 heading={MenuList.defenderSheds}
                 items={BackyardShedItems} 
-                sectionBars={SectionBarItems}
+                sectionBars={elem.categories}
             />
             <BackToProducts />
         </>

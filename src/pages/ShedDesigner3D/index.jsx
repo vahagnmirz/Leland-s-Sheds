@@ -1,13 +1,14 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import HeadingAndButton from "../../components/HeadingAndButton";
+import HubspotForm from 'react-hubspot-form';
 
 export default function ShedDesigner3D() {
     return (
-        <Box className='px-130 my-40 py-54'>
+        <Box className='px-20 depx-100 my-40 py-54'>
             <HeadingAndButton heading="3D Shed Designer"/>
-            <Box className='flex mt-40 gap-80 items-center justify-between shadow-card p-30 border-1 border-card'>
-                <Box className='w-700 h-630'>
+            <Box className='flex flex-wrap mt-40 gap-40 items-center justify-between shadow-card p-30 border-1 border-card'>
+                <Box>
                     <img
                         src={'./assets/Images/shed-designer-3d.png'}
                         alt='Logo'

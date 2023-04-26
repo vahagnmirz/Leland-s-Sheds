@@ -335,8 +335,8 @@ const RampsImageList = [
 
 export default function ShedOptions() {
     return (
-        <Box className='px-100 py-54'>
-            <Box className="flex justify-between gap-60">
+        <Box className='px3 depx-100 py-54'>
+            <Box className="flex flex-wrap justify-between gap-60">
                 <Box>
                     <HeadingAndButton heading="Shed Options & Upgrades" onlyHeading />
                     <Typography className="!font-medium text-gray !text-base">
@@ -357,7 +357,7 @@ export default function ShedOptions() {
                             DoorPaintColors.map(({ id, imageUrl }) =>
                             (
                                 <img 
-                                    key={id}
+                                    key={id}    
                                     src={imageUrl}
                                     alt='Logo'
                                     width={100}

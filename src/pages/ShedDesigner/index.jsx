@@ -4,7 +4,7 @@ import HeadingAndButton from "../../components/HeadingAndButton";
 
 export default function ShedDesigner() {
     return (
-        <Box className='px-130 mt-0 py-54'>
+        <Box className='px-20 depx-100 mt-0 py-54'>
             <HeadingAndButton heading="3D Shed Designer"/>
             <Box className='!my-35 text-center w-full'>
                 <iframe 

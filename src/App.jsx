@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, createContext } from 'react';
 import Main from './pages/Main';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -25,13 +25,22 @@ export const MenuList = {
     privacy: '/privacy',
 }
 
+export const CategoriesTags = {
+    protection: "Protection",
+    workSpace: "Work Space",
+    liveSpace: "Living Space",
+    storageSpace: "Storage Space",
+    recreationalSpace: "Recreational Space",
+}
+
 export const DefenderShedItems = [
     {
         id: 1,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.workSpace, CategoriesTags.storageSpace],
         imageUrl: '/assets/Images/Chalet Shed.jpg',
         title: 'Chalet Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 6841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -41,10 +50,11 @@ export const DefenderShedItems = [
     },
     {
         id: 2,
+        categories: [CategoriesTags.workSpace, CategoriesTags.liveSpace, CategoriesTags.recreationalSpace],
         imageUrl: '/assets/Images/Cabinette Shed.jpg',
         title: 'Cabinette Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 7841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -54,10 +64,11 @@ export const DefenderShedItems = [
     },
     {
         id: 3,
+        categories: [CategoriesTags.recreationalSpace, CategoriesTags.protection, CategoriesTags.storageSpace],
         imageUrl: '/assets/Images/Garden Shed.jpg',
         title: 'Garden Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 8841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -67,10 +78,11 @@ export const DefenderShedItems = [
     },
     {
         id: 4,
+        categories: [CategoriesTags.workSpace, CategoriesTags.protection, CategoriesTags.storageSpace],
         imageUrl: '/assets/Images/Cottage Shed.jpg',
         title: 'Cottage Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 9841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -80,10 +92,11 @@ export const DefenderShedItems = [
     },
     {
         id: 5,
+        categories: [CategoriesTags.workSpace, CategoriesTags.storageSpace, CategoriesTags.recreationalSpace],
         imageUrl: '/assets/Images/Lofted Barn Shed.jpg',
         title: 'Lofted Barn Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 5841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -93,10 +106,11 @@ export const DefenderShedItems = [
     },
     {
         id: 6,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.storageSpace, CategoriesTags.recreationalSpace],
         imageUrl: '/assets/Images/Garage Shed.jpg',
         title: 'Garage Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 4841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -106,10 +120,11 @@ export const DefenderShedItems = [
     },
     {
         id: 7,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.storageSpace, CategoriesTags.workSpace],
         imageUrl: '/assets/Images/Utility Shed.jpg',
         title: 'Utility Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 10841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -119,10 +134,11 @@ export const DefenderShedItems = [
     },
     {
         id: 8,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.protection, CategoriesTags.recreationalSpace],
         imageUrl: '/assets/Images/Studio Shed.jpg',
         title: 'Studio Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 6841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -132,10 +148,11 @@ export const DefenderShedItems = [
     },
     {
         id: 9,
+        categories: [CategoriesTags.storageSpace, CategoriesTags.protection, CategoriesTags.workSpace],
         imageUrl: '/assets/Images/Lofted Barn Shed Side Entry.jpg',
         title: 'Lofted Barn Shed Side Entry',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 7841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -148,10 +165,11 @@ export const DefenderShedItems = [
 export const DiamondShedItems = [
     {
         id: 1,
+        categories: [CategoriesTags.protection, CategoriesTags.workSpace, CategoriesTags.recreationalSpace],
         imageUrl: '/assets/Images/Diamond Chalet Shed.jpg',
         title: 'Diamond Chalet Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 7841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -161,10 +179,11 @@ export const DiamondShedItems = [
     },
     {
         id: 2,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.workSpace, CategoriesTags.storageSpace],
         imageUrl: '/assets/Images/Cabinette Shed.jpg',
         title: 'Diamond Cabinette Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 8841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -177,10 +196,11 @@ export const DiamondShedItems = [
 export const ValueShedItems = [
     {
         id: 1,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.protection, CategoriesTags.storageSpace],
         imageUrl: '/assets/Images/Basic Shed.jpg',
         title: 'Basic Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 11841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -190,10 +210,11 @@ export const ValueShedItems = [
     },
     {
         id: 2,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.workSpace, CategoriesTags.recreationalSpace],
         imageUrl: '/assets/Images/Metal Shed.jpg',
         title: 'Metal Shed',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 12841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -206,10 +227,11 @@ export const ValueShedItems = [
 export const BackyardShedItems = [
     {
         id: 1,
+        categories: [CategoriesTags.storageSpace, CategoriesTags.liveSpace, CategoriesTags.workSpace],
         imageUrl: '/assets/Images/Hideout Playhouse.jpg',
         title: 'Hideout Playhouse',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 3841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -219,10 +241,11 @@ export const BackyardShedItems = [
     },
     {
         id: 2,
+        categories: [CategoriesTags.liveSpace, CategoriesTags.protection, CategoriesTags.workSpace],
         imageUrl: '/assets/Images/Victorian Playhouse.jpg',
         title: 'Victorian Playhouse',
         description: 'Our newest design features a modern contemporary style and feel.',
-        price: '6,841',
+        price: 5841,
         subImages: [
             { imageUrl: '/assets/Images/Chalet Shed 1.jpg' },
             { imageUrl: '/assets/Images/Chalet Shed 2.jpg' },
@@ -238,17 +261,27 @@ export const ReviewItems = [
     "They were very professional where we came in looking for a building for our storage. Upon delivery the driver was very knowledgeable place in the shed in the quick location and leveling it and squaring away awesome job.",
 ];
 
-export const SectionBarItems = [
-    "Protection",
-    "Work Space",
-    "Storage Space",
-];
+export const PriceContext = createContext(null);
+export const CategoriesContext = createContext(null);
 
 function App() {
+    const [price, setPrice] = useState(6500);
+    const [category, setCategory] = useState('');
+
     return (
         <React.StrictMode>
             <BrowserRouter>
-                <Main />
+                <PriceContext.Provider value={{
+                    price,
+                    priceChangeHandler: (newValue) => setPrice(newValue),
+                }}>
+                    <CategoriesContext.Provider value={{
+                        category,
+                        categoryChangeHandler: (newValue) => setCategory(newValue),
+                    }}>
+                        <Main />
+                    </CategoriesContext.Provider>
+                </PriceContext.Provider>
             </BrowserRouter>
         </React.StrictMode>
     )

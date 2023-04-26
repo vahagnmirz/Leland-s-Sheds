@@ -4,7 +4,7 @@ import { Box, Button, Typography } from '@mui/material';
 
 export default function CanWeHelp({ closeHandler }) {
     return (
-        <Box className="bg-white shadow-menu rounded-4 w-can-we-help fixed bottom-20 left-half translate-x-half_ px-20 pt-20">
+        <Box className="bg-white shadow-menu rounded-4 w-can-we-help fixed bottom-20 left-half translate-x-half_ z-2 px-20 pt-20">
             <Box className="text-right">
                 <Close className='text-menuClose !text-4xl cursor-pointer' onClick={closeHandler} />
             </Box>

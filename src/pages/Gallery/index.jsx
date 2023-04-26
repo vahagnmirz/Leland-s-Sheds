@@ -67,8 +67,8 @@ const GalleryList = [
 
 export default function Gallery() {
     return (
-        <Box className='px-100 py-54'>
-            <HeadingAndButton heading="Shed Gallery"/>
+        <Box className='px3 depx-100 py-54'>
+            <HeadingAndButton heading="Shed Gallery" />
             <Box className='flex flex-wrap gap-20 !my-30'>
                 {
                     GalleryList.map(({ id, imageUrl }) =>

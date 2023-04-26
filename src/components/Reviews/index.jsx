@@ -4,11 +4,11 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 export default function Reviews({ items = [] }) {
     return (
-        <Box className='py-30 px-100'>
+        <Box className='py-30 px3 depx-100'>
             <Typography variant='body1' component='h1' className='!text-4xl text-red !font-medium !mb-30'>
                 Want to design your shed online? 
             </Typography>
-            <Box className='flex justify-between items-center gap-30'>
+            <Box className='flex flex-wrap large_desktop:flex-nowrap justify-between items-center gap-30'>
                 {
                     items.map((each, idx) => (
                         <Box key={idx} className='flex gap-10 rounded-8 shadow-reviewCard p-15 !text-7xl'>

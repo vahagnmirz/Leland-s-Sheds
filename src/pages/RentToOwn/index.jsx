@@ -5,8 +5,8 @@ import HeadingAndButton from "../../components/HeadingAndButton";
 export default function RentToOwn() {
     return (
         <>
-            <Box className="flex justify-between px-100 py-54 gap-100">
-                <Box className="max-w-600">
+            <Box className="flex flex-wrap justify-between px3 depx-100 py-54 gap-100">
+                <Box className="desktop:max-w-600">
                     <HeadingAndButton heading="Rent to Own Sheds" onlyHeading />
                     <Box className="!mt-35 !mb-30 rounded-4 shadow-card p-20">
                         <Typography className="!font-medium !text-lg">
@@ -102,7 +102,7 @@ export default function RentToOwn() {
                     </Typography>
                 </Box>
 
-                <Box className="max-w-600">
+                <Box className="desktop:max-w-600">
                     <HeadingAndButton onlyButton />
                     <Box className="!mt-35 !mb-20 rounded-4">
                         <img 
@@ -200,13 +200,3 @@ export default function RentToOwn() {
         </>
     )
 }
-/*
-
-
-
-
-
-
-
-
-*/

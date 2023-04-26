@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, FormControl, FormControlLabel, Radio, RadioGroup, Typography } from "@mui/material";
+import { CategoriesContext, CategoriesTags } from "../../App";
 
 export default function SidebarRadios() {
+    const { category, categoryChangeHandler } = useContext(CategoriesContext);
+
+    const handleChange = (evt) => categoryChangeHandler(evt.target.value);
+
     return (
         <Box>
             <Typography variant='body1' component='div' className='!mt-30 !mb-10 !font-medium !text-base cursor-pointer'>
@@ -18,9 +23,11 @@ export default function SidebarRadios() {
                 <RadioGroup
                     aria-labelledby="demo-radio-buttons-group-label"
                     name="radio-buttons-group"
+                    value={category}
+                    onChange={handleChange}
                 >
                     <FormControlLabel 
-                        value="1" 
+                        value={CategoriesTags.protection}
                         control={
                             <Radio classes={{ root: '!py-3', checked: '!text-sidebarList' }} />
                         } 
@@ -28,7 +35,7 @@ export default function SidebarRadios() {
                         classes={{label: '!text-sm !font-medium text-sidebarList'}}
                     />
                     <FormControlLabel 
-                        value="2" 
+                        value={CategoriesTags.storageSpace}
                         control={
                             <Radio classes={{ root: '!py-3', checked: '!text-sidebarList' }} />
                         } 
@@ -36,7 +43,7 @@ export default function SidebarRadios() {
                         classes={{label: '!text-sm !font-medium text-sidebarList'}}
                     />
                     <FormControlLabel 
-                        value="3" 
+                        value={CategoriesTags.liveSpace}
                         control={
                             <Radio classes={{ root: '!py-3', checked: '!text-sidebarList' }} />
                         } 
@@ -44,7 +51,7 @@ export default function SidebarRadios() {
                         classes={{label: '!text-sm !font-medium text-sidebarList'}}
                     />
                     <FormControlLabel 
-                        value="4" 
+                        value={CategoriesTags.workSpace}
                         control={
                             <Radio classes={{ root: '!py-3', checked: '!text-sidebarList' }} />
                         } 
@@ -52,7 +59,7 @@ export default function SidebarRadios() {
                         classes={{label: '!text-sm !font-medium text-sidebarList'}}
                     />
                     <FormControlLabel 
-                        value="5" 
+                        value={CategoriesTags.recreationalSpace}
                         control={
                             <Radio classes={{ root: '!py-3', checked: '!text-sidebarList' }} />
                         } 

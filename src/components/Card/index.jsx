@@ -12,6 +12,8 @@ export default function Card({
     sectionBars,
     isSimilar
 }) {
+    const formatter = new Intl.NumberFormat('en-gb');
+
     return (
         <Box className='rounded-4 max-w-450 shadow-card border-1 border-card p-20'>
             <img 
@@ -27,18 +29,18 @@ export default function Card({
             {
                 price ?
                 <Typography variant='body1' component='div' className='!font-medium text-red !text-xs text-center'>
-                    Starting at ${price}
+                    Starting at ${formatter.format(price)}
                 </Typography> :
                 null
             }
-            <Typography variant='body1' component='div' className='!font-normal text-black !text-sm text-center px-30'>
+            <Typography variant='body1' component='div' className='!font-normal text-black !text-sm text-center px3'>
                 { description }
             </Typography>
 
             <Box className='mt-10 flex justify-center gap-20 items-center'>
                 <Link to={isSimilar ? `` : `${id}`}>
                     <Button
-                        className='!bg-white flex justify-center gap-20 items-center'
+                        className='!bg-white flex justify-center gap-20 items-center !leading-20'
                         sx={{
                             borderRadius: '8px',
                             padding: '8px 35px',
@@ -55,7 +57,7 @@ export default function Card({
                 </Link>
                 <Link to={MenuList.shedDesigner}>
                     <Button
-                        className='!bg-red flex justify-center gap-20 items-center'
+                        className='!bg-red flex justify-center gap-20 items-center !leading-20'
                         sx={{
                             borderRadius: '8px',
                             padding: '8px 35px',

@@ -12,7 +12,7 @@ export default function CardExtended({
     subImages,
 }) {
     return (
-        <Box className="px-100 mt-30">
+        <Box className="px3 depx-100 mt-30">
             <Breadcrumbs 
                 separator={<NavigateNextIcon fontSize="small" />}
                 aria-label="breadcrumb"
@@ -27,18 +27,16 @@ export default function CardExtended({
                 <Typography className="text-red">{ title }</Typography>
             </Breadcrumbs>
 
-            <Box className='flex justify-center items-center gap-50 rounded-4 shadow-card border-card p-20'>
-                <Box>
+            <Box className='flex flex-wrap justify-center items-center gap-50 rounded-4 shadow-card border-card p-20'>
+                <Box className='desktop:flex-1 desktop:max-w-550 desktop:min-w-360'>
                     <img 
                         src={imageUrl}
                         alt='Logo'
-                        width={560}
-                        height={400}
                         className='block mx-auto'
                     />
                 </Box>
 
-                <Box className='max-w-30'>
+                <Box className='flex-1'>
                     <Typography variant='body1' component='div' className='!font-medium text-black !text-2xl text-center'>
                         { title }
                     </Typography>
@@ -69,11 +67,11 @@ export default function CardExtended({
                     </Box>
                 </Box>
             </Box>
-        
-            <Box className='flex justify-between gap-50 rounded-4 p-20 pr-0 mt-50'>
+
+            <Box className='flex flex-wrap justify-between gap-50 rounded-4 p-20 pr-0 mt-50'>
                 <Box>
                     <Typography className="text-red capitalize !text-2xl">your Chalet Shed will be built with these elements</Typography>
-                    <Box className='flex text-left gap-10'>
+                    <Box className='flex flex-wrap text-left gap-10'>
                         <List
                             sx={{
                                 listStyleType: 'disc',
@@ -194,10 +192,12 @@ export default function CardExtended({
                         <img 
                             src={subImages?.[0]?.imageUrl}
                             alt='Logo'
-                            className='w-auto block mx-auto max-w-500'
+                            width={480}
+                            height={300}
+                            className='block mx-auto max-w-500 w-full'
                         />
                     </Box>
-                    <Box className='flex justify-between mt-10 gap-10'>
+                    <Box className='flex flex-wrap justify-center mt-25 gap-25'>
                         {
                             subImages?.slice(1).map(({ imageUrl }, idx) => (
                                 <img 

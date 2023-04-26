@@ -37,7 +37,7 @@ const IconsList = [
 
 export default function About() {
     return (
-        <Box className='px-100 py-54'>
+        <Box className='px3 depx-100 py-54'>
             <HeadingAndButton heading="About Us"/>
             <Typography variant='body1' component='div' className='text-left !font-medium text-black !text-2xl !mb-10 !mt-35'>
                 From the owners
@@ -55,7 +55,7 @@ export default function About() {
                 <Typography variant='body1' component='div' className='text-left !font-medium text-black !text-2xl !mb-10 !mt-35'>
                     Our Core Values
                 </Typography>
-                <Box className='flex gap-50 !my-30'>
+                <Box className='flex gap-50 !my-30 !flex-wrap'>
                     {
                         IconsList.map(({ id, imageUrl, heading, description }) =>
                         (
@@ -84,7 +84,7 @@ export default function About() {
             <Typography variant='body1' component='div' className='text-left text-black !font-normal !text-lg !mt-10'>
                 Each year we have a Leland's Care Shed Giveaway to bless someone that is in need of a shed. We are open to candidate suggestions then we as a team pray over these and follow God's leading on who to bless with a shed. We have had some rich experiences through this annual tradition and look forward to many more!Here's a few of the people that God has allowed us to meet and be inspired by listening to their stories.
             </Typography>
-            <Box className='flex gap-20 my-10'>
+            <Box className='flex gap-20 my-10 !flex-wrap'>
                 <img
                     src={'/assets/Images/Family 1.jpg'}
                     alt='Logo'

@@ -43,6 +43,7 @@ export default {
                 '130': '130px',
                 '135': '135px',
                 '270': '270px',
+                '400': '400px',
                 '850': '850px',
                 '1700': '1500px',
                 'half': '50%',
@@ -51,8 +52,9 @@ export default {
             screens: {
                 'mobile': '320px',
                 'mobile_laptop': '420px',
-                'laptop': '668px',
-                'desktop': '10240px',
+                'laptop': '768px',
+                'desktop': '1024px',
+                'large_desktop': '1300px',
             },
             height: {
                 'fh': '100vh',
@@ -79,17 +81,23 @@ export default {
             },
             minHeight: {
                 'fh': '100vh',
-                'layout': 'calc(100vh - 191px)',
+                'layout': 'calc(100vh - 186px)',
                 '200': '200px',
                 '400': '400px',
             },
             maxHeight: {
                 'fh': '100vh',
                 '200': '200px',
+                '370': '370px',
                 '400': '400px',
             },
             minWidth: {
                 'fw': '100vw',
+                '300': '300px',
+                '360': '360px',
+                '425': '425px',
+                '460': '460px',
+                '560': '560px',
             },
             maxWidth: {
                 'fw': '100vw',
@@ -100,11 +108,18 @@ export default {
                 '500': '500px',
                 '550': '550px',
                 '600': '600px',
+                '700': '700px',
+                '800': '800px',
                 'half': '50%',
                 '45': '45%',
                 '40': '40%',
                 '30': '30%',
             },
+        },
+        lineHeight: {
+            '4.5': '18px',
+            '20': '20px',
+            '25': '25px',
         },
         zIndex: {
             '_2': '-2',
@@ -126,7 +141,6 @@ export default {
             'gray-2': '#808080',
             grey: '#505050',
             lightblue: '#D2D2D2',
-
         },
         boxShadow: {
             menu: '-4px 4px 4px rgba(0, 0, 0, 0.25);',

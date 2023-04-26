@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import Sidebar from "../../Sidebar";
 import { Box } from "@mui/material";
 import LayoutHeader from "../../LayoutHeader";
@@ -21,12 +21,12 @@ import Contact from "../../../pages/Contact";
 import ShedDesigner from "../../../pages/ShedDesigner";
 import ShedDesigner3D from "../../../pages/ShedDesigner3D";
 
-export default function DefaultLayout({  }) {
+export default function DefaultLayout() {
     return (
         <>
             <Box className='flex min-h-layout'>
                 <Sidebar />
-                <Box className='grow flex flex-col justify-between'>
+                <Box className='grow flex flex-col justify-between desktop:ml-400 laptop:ml-400 mt-[117px]'>
                     <LayoutHeader />
 
                     <Routes>
@@ -104,7 +104,7 @@ export default function DefaultLayout({  }) {
                         <Route exact path={MenuList.delivery} element={ <LalandShedsDeliveryStatic /> } />
                         <Route exact path={MenuList.privacy} element={ <PrivacyPolicyStatic /> } />
 
-                        <Route path="*" element={ <Navigate to={MenuList.defenderShedsUrl} /> } />
+                        {/* <Route path="*" element={ <Navigate to={MenuList.defenderShedsUrl} /> } /> */}
                     </Routes>
 
                     <Box className='grow flex flex-col justify-end'>

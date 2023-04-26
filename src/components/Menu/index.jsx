@@ -6,7 +6,7 @@ import { MenuList } from '../../App';
 
 export default function Menu({ closeHandler }) {
     return (
-        <Box className="bg-white shadow-menu rounded-4 w-menu absolute right-30 px-30 z-2">
+        <Box className="bg-white shadow-menu rounded-4 w-menu fixed right-30 top-100 px3 z-2">
             <Box className="text-right">
                 <Close onClick={closeHandler} className='text-menuClose mr-_10 !text-4xl cursor-pointer' />                
             </Box>

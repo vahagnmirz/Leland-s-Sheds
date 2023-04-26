@@ -1,12 +1,13 @@
 import React from "react";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import HeadingAndButton from "../../components/HeadingAndButton";
+import HubspotForm from 'react-hubspot-form';
 
 export default function Contact() {
     return (
-        <Box className='px-130 mt-0 py-54'>
+        <Box className='px3 depx-100 mt-0 py-54'>
             <HeadingAndButton heading="Contact Us"/>
-            <Box className='!mt-35 flex flex-col justify-between relative'>
+            <Box className='!mt-35 !w-full flex flex-col justify-between relative'>
                 <img
                     src={'./assets/Images/Contact Page image.jpg'}
                     alt='Logo'
@@ -21,7 +22,7 @@ export default function Contact() {
                     <Typography variant='body1' component='div' className='text-center !font-normal text-gray-2 !text-base !mb-10 !pt-20 !pb-30'>
                         Our friendly expert consultants look forward to helping you with any shed or building needs.
                     </Typography>
-                    <Box className="bg-tooltip mt-20 py-135 px-270 !mx-auto inline-flex justify-center items-center">
+                    <Box className="bg-tooltip mt-20 w-full max-w-800 h-300 !mx-auto inline-flex justify-center items-center">
                         <Typography variant='body1' component='div' className="block !text-center !font-medium !text-base">
                             <input 
                                 type="text" 

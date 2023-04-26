@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Slider, Tooltip, Typography } from "@mui/material";
+import { PriceContext } from "../../App";
 
 export default function SidebarSlider() {
+    const { price, priceChangeHandler } = useContext(PriceContext);
+
+    const changeHandler = (evt, newValue) => priceChangeHandler(newValue);
+
     const ValueLabelComponent = ({ children, value }) => (
         <Tooltip 
             arrow
@@ -24,8 +29,9 @@ export default function SidebarSlider() {
             </Typography>
             <Slider
                 size="small"
+                value={price}
                 min={1000}
-                defaultValue={9500}
+                onChange={changeHandler}
                 max={13000}
                 step={100}
                 aria-label="Small"

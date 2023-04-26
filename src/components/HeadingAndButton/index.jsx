@@ -24,12 +24,12 @@ export default function HeadingAndButton({ onlyButton, onlyHeading, heading, but
 
     return (
         <Box className="flex justify-between">
-            <Typography variant='body1' component='div' className='!font-medium text-red !text-[32px] text-left'>
+            <Typography variant='body1' component='div' className='!font-medium text-red !text-4xl !mr-15 text-left !leading-5'>
                 { heading }
             </Typography>
             <Box className="flex justify-end">
                 <Link to={MenuList.defenderShedsUrl}>
-                    <Button className='!bg-red !text-white !px-40 !py-15 !text-base !normal-case !rounded-8'>
+                    <Button className='!bg-red !text-white !px-40 !py-15 !text-base !normal-case !rounded-8 !leading-4.5'>
                         { buttonText }
                     </Button>
                 </Link>
