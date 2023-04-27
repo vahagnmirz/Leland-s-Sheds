@@ -4,7 +4,7 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 export default function Reviews({ items = [] }) {
     return (
-        <Box className='py-30 px3 depx-100'>
+        <Box className='py-30 px-30 depx-100'>
             <Typography variant='body1' component='h1' className='!text-4xl text-red !font-medium !mb-30'>
                 Want to design your shed online? 
             </Typography>

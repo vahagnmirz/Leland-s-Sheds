@@ -335,7 +335,7 @@ const RampsImageList = [
 
 export default function ShedOptions() {
     return (
-        <Box className='px3 depx-100 py-54'>
+        <Box className='px-30 depx-100 py-54'>
             <Box className="flex flex-wrap justify-between gap-60">
                 <Box>
                     <HeadingAndButton heading="Shed Options & Upgrades" onlyHeading />

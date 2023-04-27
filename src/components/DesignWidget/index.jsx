@@ -30,7 +30,7 @@ export default function DesignWigdet() {
             </Box>
             <Link to={MenuList.shedDesigner3d}>
                 <Button
-                    className='!bg-white flex justify-center gap-20 items-center !px3 !py-10 !leading-25'
+                    className='!bg-white flex justify-center gap-20 items-center !px-30 !py-10 !leading-25'
                     endIcon={<TrendingFlatIcon color="inherit" className='!text-3xl' />}
                     sx={{
                         borderRadius: '8px',

@@ -264,9 +264,12 @@ export const ReviewItems = [
 export const PriceContext = createContext(null);
 export const CategoriesContext = createContext(null);
 
+const InitialPrice = 6500;
+const InitialCategory = '';
+
 function App() {
-    const [price, setPrice] = useState(6500);
-    const [category, setCategory] = useState('');
+    const [price, setPrice] = useState(InitialPrice);
+    const [category, setCategory] = useState(InitialCategory);
 
     return (
         <React.StrictMode>
@@ -274,10 +277,12 @@ function App() {
                 <PriceContext.Provider value={{
                     price,
                     priceChangeHandler: (newValue) => setPrice(newValue),
+                    priceResetHandler: () => setPrice(InitialPrice)
                 }}>
                     <CategoriesContext.Provider value={{
                         category,
                         categoryChangeHandler: (newValue) => setCategory(newValue),
+                        categoryResetHandler: () => setCategory(InitialCategory)
                     }}>
                         <Main />
                     </CategoriesContext.Provider>

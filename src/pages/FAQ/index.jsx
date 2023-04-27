@@ -4,7 +4,7 @@ import HeadingAndButton from "../../components/HeadingAndButton";
 
 export default function FAQ() {
     return (
-        <Box className="flex flex-wrap justify-between px3 depx-100 py-54 gap-60">
+        <Box className="flex flex-wrap justify-between px-30 depx-100 py-54 gap-60">
             <Box className="desktop:max-w-45">
                 <HeadingAndButton heading="FAQs about Leland's sheds" onlyHeading />
                 <Box className="!mt-35 !mb-30 rounded-4 shadow-card p-20">

@@ -18,7 +18,7 @@ export default function SidebarList() {
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
                                     (pathname.includes(MenuList.defenderShedsUrl)) ?
-                                    'bg-red rounded-34 text-white' :
+                                    'bg-red rounded-34 text-white !mb-5' :
                                     ''
                                 }
                             `}
@@ -35,6 +35,7 @@ export default function SidebarList() {
                         display: 'flex',
                         flexDirection: 'column',
                         gap: 0,
+                        padding: 0,
                         color: '#716D6D',
                         marginBottom: '10px'
                     }}
@@ -76,7 +77,7 @@ export default function SidebarList() {
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
                                     (pathname.includes(MenuList.diamondShedsUrl)) ?
-                                    'bg-red rounded-34 text-white' :
+                                    'bg-red rounded-34 text-white !mb-5' :
                                     ''
                                 }
                             `}
@@ -93,6 +94,7 @@ export default function SidebarList() {
                         display: 'flex',
                         flexDirection: 'column',
                         gap: 0,
+                        padding: 0,
                         color: '#716D6D',
                         marginBottom: '10px'
                     }}
@@ -134,7 +136,7 @@ export default function SidebarList() {
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
                                     (pathname.includes(MenuList.valueShedsUrl)) ?
-                                    'bg-red rounded-34 text-white' :
+                                    'bg-red rounded-34 text-white !mb-5' :
                                     ''
                                 }
                             `}
@@ -151,6 +153,7 @@ export default function SidebarList() {
                         display: 'flex',
                         flexDirection: 'column',
                         gap: 0,
+                        padding: 0,
                         color: '#716D6D',
                         marginBottom: '10px'
                     }}
@@ -187,7 +190,7 @@ export default function SidebarList() {
                             className={`flex justify-between items-center gap-20 py-5 !font-medium !text-base cursor-pointer px-25
                                 ${
                                     (pathname.includes(MenuList.backyardShedsUrl)) ?
-                                    'bg-red rounded-34 text-white' :
+                                    'bg-red rounded-34 text-white !mb-5' :
                                     ''
                                 }
                             `}
@@ -204,6 +207,7 @@ export default function SidebarList() {
                         display: 'flex',
                         flexDirection: 'column',
                         gap: 0,
+                        padding: 0,
                         color: '#716D6D',
                         marginBottom: '10px'
                     }}

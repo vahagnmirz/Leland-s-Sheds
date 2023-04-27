@@ -7,7 +7,7 @@ export default function BackToProducts() {
     const clickHandler = () => navigate(-1);
 
     return (
-        <Box className='flex flex-wrap justify-between px3 depx-100 gap-40 mb-60'>
+        <Box className='flex flex-wrap justify-between px-30 depx-100 gap-40 mb-60'>
             <Box>   
                 <Typography variant='body1' component='p' className='!text-base text-black !font-medium !mb-10'>
                     Shed line products are not designed and built for residential purposes.

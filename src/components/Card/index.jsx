@@ -33,7 +33,7 @@ export default function Card({
                 </Typography> :
                 null
             }
-            <Typography variant='body1' component='div' className='!font-normal text-black !text-sm text-center px3'>
+            <Typography variant='body1' component='div' className='!font-normal text-black !text-sm text-center px-30'>
                 { description }
             </Typography>
 

@@ -26,7 +26,7 @@ export default function DefaultLayout() {
         <>
             <Box className='flex min-h-layout'>
                 <Sidebar />
-                <Box className='grow flex flex-col justify-between desktop:ml-400 laptop:ml-400 mt-[117px]'>
+                <Box className='grow flex flex-col justify-between laptop:ml-350 mt-[117px]'>
                     <LayoutHeader />
 
                     <Routes>
@@ -104,7 +104,7 @@ export default function DefaultLayout() {
                         <Route exact path={MenuList.delivery} element={ <LalandShedsDeliveryStatic /> } />
                         <Route exact path={MenuList.privacy} element={ <PrivacyPolicyStatic /> } />
 
-                        {/* <Route path="*" element={ <Navigate to={MenuList.defenderShedsUrl} /> } /> */}
+                        <Route path="*" element={ <Navigate to={MenuList.defenderShedsUrl} /> } />
                     </Routes>
 
                     <Box className='grow flex flex-col justify-end'>

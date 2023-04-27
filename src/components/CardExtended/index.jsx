@@ -12,7 +12,7 @@ export default function CardExtended({
     subImages,
 }) {
     return (
-        <Box className="px3 depx-100 mt-30">
+        <Box className="px-30 depx-100 mt-30">
             <Breadcrumbs 
                 separator={<NavigateNextIcon fontSize="small" />}
                 aria-label="breadcrumb"

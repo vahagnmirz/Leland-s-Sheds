@@ -5,7 +5,7 @@ import HubspotForm from 'react-hubspot-form';
 
 export default function Contact() {
     return (
-        <Box className='px3 depx-100 mt-0 py-54'>
+        <Box className='px-30 desktop:px-100 mt-0 py-54'>
             <HeadingAndButton heading="Contact Us"/>
             <Box className='!mt-35 !w-full flex flex-col justify-between relative'>
                 <img
@@ -22,14 +22,11 @@ export default function Contact() {
                     <Typography variant='body1' component='div' className='text-center !font-normal text-gray-2 !text-base !mb-10 !pt-20 !pb-30'>
                         Our friendly expert consultants look forward to helping you with any shed or building needs.
                     </Typography>
-                    <Box className="bg-tooltip mt-20 w-full max-w-800 h-300 !mx-auto inline-flex justify-center items-center">
-                        <Typography variant='body1' component='div' className="block !text-center !font-medium !text-base">
-                            <input 
-                                type="text" 
-                                placeholder="Enter Hubspot Code"
-                                className="!p-0 !border-none bg-tooltip placeholder:text-black !text-center !font-medium !text-base hover:border-none hover:outline-none"/>
-                        </Typography>
-                    </Box>
+                    <HubspotForm 
+                        region="na1"
+                        portalId="4386756"
+                        formId="a93f6de8-263b-4040-a776-65dbae5affaf"
+                    />
                     <Typography variant='body1' component='div' className='text-center !font-normal text-black !text-xs !mb-40 !mt-35'>
                         By clicking submit, I’m agreeing to submitting my contact information in order for a sales person to contact me in regards to the products I’m interested in.
                     </Typography>
