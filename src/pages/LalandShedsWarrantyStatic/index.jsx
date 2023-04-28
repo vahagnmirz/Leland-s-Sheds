@@ -6,7 +6,7 @@ import BaseText from "../../components/BaseText"
 export default function LalandShedsWarrantyStatic() {
     return (
         <>
-            <Box className="justify-between px-20 depx-100 py-50">
+            <Box className="justify-between px-20 desktop:px-100 py-50">
                 <HeadingAndButton heading="Leland's Sheds Warranty" />
                 <Box className='mb-30 mt-40'>
                     <BaseText text="Valid on all items in Defender Series (10 year), Value Series (3 year), Outdoor Living Series (5 year). This warranty does not cover finished out cabins." />

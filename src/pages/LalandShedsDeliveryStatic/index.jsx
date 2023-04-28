@@ -5,7 +5,7 @@ import HeadingAndButton from "../../components/HeadingAndButton";
 
 export default function LalandShedsDeliveryStatic() {
     return (
-        <Box className="flex flex-wrap flex-col large_desktop:flex-row justify-between px-30 depx-100 py-54 gap-50 laptop:gap-20">
+        <Box className="flex flex-wrap flex-col large_desktop:flex-row justify-between px-30 desktop:px-100 py-54 gap-50 laptop:gap-20">
             <Box className="flex-1">
                 <HeadingAndButton heading="Leland's Sheds Delivery" onlyHeading />
                 <Box className="!mt-30">

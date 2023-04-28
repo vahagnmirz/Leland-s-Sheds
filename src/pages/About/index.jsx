@@ -37,7 +37,7 @@ const IconsList = [
 
 export default function About() {
     return (
-        <Box className='px-30 depx-100 py-54'>
+        <Box className='px-30 desktop:px-100 py-54'>
             <HeadingAndButton heading="About Us"/>
             <Typography variant='body1' component='div' className='text-left !font-medium text-black !text-2xl !mb-10 !mt-35'>
                 From the owners

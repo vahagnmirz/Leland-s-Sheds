@@ -19,7 +19,7 @@ export default function CardContainer({
         items.filter(each => each.price>=price);
 
     return (
-        <Box className={`rounded-4 m-30 desktop:mb-120 laptop:mb-20 ${isSlim ? "depx-100" : ""}`}>
+        <Box className={`rounded-4 m-30 desktop:mb-120 laptop:mb-20 ${isSlim ? "desktop:px-100" : ""}`}>
             <Typography variant='body1' component='div' className={`!font-semibold ${ isRedHeading ? "text-red" : "text-black" } !mb-30 !text-2xl cursor-pointer`}>
                 { heading }
             </Typography>

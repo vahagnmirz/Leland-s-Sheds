@@ -6,7 +6,7 @@ import BaseText from "../../components/BaseText"
 export default function PrivacyPolicyStatic() {
 
     return (
-        <Box className="px-30 depx-100 py-54 gap-100">
+        <Box className="px-30 desktop:px-100 py-54 gap-100">
             <HeadingAndButton heading="Privacy Policy" />
 
             <Box>

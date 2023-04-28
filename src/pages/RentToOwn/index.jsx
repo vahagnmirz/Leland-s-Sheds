@@ -5,7 +5,7 @@ import HeadingAndButton from "../../components/HeadingAndButton";
 export default function RentToOwn() {
     return (
         <>
-            <Box className="flex flex-wrap justify-between px-30 depx-100 py-54 gap-100">
+            <Box className="flex flex-wrap justify-between px-30 desktop:px-100 py-54 gap-100">
                 <Box className="desktop:max-w-600">
                     <HeadingAndButton heading="Rent to Own Sheds" onlyHeading />
                     <Box className="!mt-35 !mb-30 rounded-4 shadow-card p-20">
